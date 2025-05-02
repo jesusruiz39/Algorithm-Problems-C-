@@ -1,0 +1,32 @@
+link problema: https://codeforces.com/gym/102277/problem/C
+
+El problema habla de un control remoto que no funcionan ciertas teclas, y te aseguran que serviran siempre
+los botones de subir canal o bajar canal
+te daran la cantidad de teclas que no funcionan, seguido de las n teclas que no funcionan (0 - 9)
+despues un canal al que se quiere llegar
+
+La tarea es ver cuantas son la minima cantidad de pulsaciones de arriba o abajo ocuparias para llegar a dicho canal 
+El canal esta entre 0 y 999
+por ejemplo:
+
+entrada:
+    4 1 2 5 9
+    250
+salida:
+    50
+
+Puedes llegar al 300 y dar 50 pulsaciones abajo para llegar al canal
+
+
+Explicion codigo:
+    vamos a leer nuestra entradas, y el canal a llegar
+    Y vamos a recorrer todos los canales ya que solo son 1000 posbles canales, 
+    veremos si nos es posble obtener el canal
+    Si si se puede obtener guardaremos la distancia de ese canal al que deseamos obtener
+    sacando el absoluto de su resta de canal - canalObtener
+
+    Al final tendremos un vector con distancias, asi que solo obtenemos el menor numero guardado 
+    en el vector con std::min_element(v.begin(), v.end()); 
+    Recordamos que te regresa una direccion, asi que se guarda como int r = *std::min_element()
+
+(Realmente alguien leera esto xd)
