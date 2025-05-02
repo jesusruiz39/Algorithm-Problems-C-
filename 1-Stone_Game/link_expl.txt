@@ -1,0 +1,14 @@
+Link problema: https://szkopul.edu.pl/problemset/problem/rS4bkA_xD0CDBXS6rz_hvoVp/site/?key=statement
+
+__builtin_ctz(n); Esta funcion nos regresa la cantidad de 0 al final de su 
+                reepresentacion binaria por ejemplo: 8 ← 1000, la funcion devuelve 
+                un 3 por la cantidad de ceros al final
+
+Sabiendo esto, la cantidad de 0s es igual a lo que se puede dividir n / 2 exactamente veces antes de que deje dar un número entero
+
+    Si e es impar (1, 3, 5, …), gana quien empieza.
+    Si e es par (0, 2, 4, …), gana quien juega segundo.
+
+Básicamente pierde quien le toque el primer número impar de ir dividiendo entre dos UwU
+Igual se puede hacer la division e ir contando las  veces que fue divisible, pero esta 
+funcion nos facilita esto, y queda justo con este problema. ^^
