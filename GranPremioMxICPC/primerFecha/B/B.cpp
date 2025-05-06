@@ -48,6 +48,9 @@ void recorre(int i, int j, int dir, auto& direccion, int n, auto& matriz, auto& 
 
 
 int main(){
+	std::ios::sync_with_stdio(false);
+	std::cin.tie(nullptr);
+
 	int n;
 	std::cin >> n;
 	std::vector<std::vector<long long>>matriz(n, std::vector<long long>(n));
